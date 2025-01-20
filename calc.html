@@ -17,8 +17,34 @@
     <script>
         let button = document.getElementById("buttn");
 
-        button.addEventListener("click", function(){
+        button.addEventListener("click", function () {
             console.log("yo");
+
+            const numb1 = parseFloat(document.getElementById("number1").value);
+            const operat = document.getElementById("operator").value;
+            const numb2 = parseFloat(document.getElementById("number2").value);
+
+            function calc(numb1, operat, numb2) {
+                const result = 0;
+                switch (operat) {
+                    case "+":
+                        result = numb1 + numb2;
+                        break;
+                    case "-":
+                        result = numb1 - numb2;
+                        break;
+                    case "*":
+                        result = numb1 * numb2;
+                        break;
+                    case "/":
+                        result = numb1 / numb2;
+                        break;
+                    default:
+                        console.log("Empty");
+                        break;
+                }
+                return result;
+            }
         })
     </script>
 </body>

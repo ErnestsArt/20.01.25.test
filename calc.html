@@ -12,7 +12,15 @@
     <input type="text" name="operator" id="operator" placeholder="Operator">
     <input type="number" name="number2" id="number2" placeholder="Number 2.">
 
-    <input type="button" value="Rēķināt">
+    <input type="button" value="Rēķināt" id="buttn">
+
+    <script>
+        let button = document.getElementById("buttn");
+
+        button.addEventListener("click", function(){
+            console.log("yo");
+        })
+    </script>
 </body>
 
 </html>
